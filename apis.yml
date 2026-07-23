@@ -1,8 +1,27 @@
 aid: assemble-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/assemble-labs.png
 name: Assemble Labs
-description: Assemble Labs is a company surfaced as a portfolio company of menlo-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Assemble Labs is an AI-powered hardware testing platform that autonomously designs and runs
+  experiments on embedded systems, letting engineers validate firmware against specifications using real
+  lab instruments without manual setup. It converts engineering requirements into executable test cases,
+  drives physical devices through real instrument control (oscilloscopes, power profilers, logic
+  analyzers from Saleae, Tektronix, Keysight, Rohde & Schwarz, Fluke, Yokogawa, National Instruments and
+  Joulescope), performs root-cause analysis, proposes firmware fixes, and verifies them on actual
+  hardware. Test results and reports are committed to Git for traceability. The product runs on-premises
+  and air-gapped with zero data egress, and integrates with VS Code, Cursor, and Claude. Assemble Labs
+  is an early-stage company (pre-seed, $1.3M led by Menlo Ventures) and is tracked in the API Evangelist
+  network as a portfolio lead; it does not yet publish a public API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/assemble-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Hardware Testing
+- Embedded Systems
+- Firmware
+- Test Automation
+- Lab Automation
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/assemble-labs-domain-security.yml
 - type: Website
   url: https://assemblelabs.ai
+- type: GitHubOrganization
+  url: https://github.com/assemble-labs
+- type: SignUp
+  url: https://calendly.com/assemble-labs/introduction
+- type: LinkedIn
+  url: https://www.linkedin.com/company/assemblelabs
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
